@@ -4,7 +4,7 @@
 }
 
 :root {
-    --prime: rgb(242, 248, 215);
+    --prime: rgba(210, 180, 140, 0.651);
 }
 
 
@@ -74,13 +74,12 @@ header nav ul li {
 
         /* ------ About Me ------ */
 
-#about-me {
+.about {
     background-color: var(--prime);
     background-size: cover;
 }
 
 #about-me h3 {
-
     font-weight: 800;
     font-size: 35px;
     border-bottom: 3px solid;
@@ -92,10 +91,117 @@ header nav ul li {
 
 #about-me div {
     width: 90%;
-    margin: 30px auto;
+    margin: auto;
 }
 
         /* ------ Work ------ */
+
+#work {
+    background-image: url("../images/wood-pattern.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+        
+#work h3 {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    color: var(--prime);
+    font-weight: 800;
+    font-size: 55px;
+    border-left: 3px solid var(--prime);
+    text-align: center;
+    margin: 0 10%;
+}
+
+        /* ------ Grid design and layout ------ */
+
+.gallery{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:  repeat(3 1fr);
+    grid-template-rows:  repeat(3 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-auto-columns: minmax(200px, auto);
+    margin: 90px;
+}
+
+.gallery-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.gallery h4 {
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    font-size: 28px;
+    margin: 5px;
+    transition: 0.6s;
+    opacity: 0;
+    vertical-align: text-bottom;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery a {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-item h4:hover {
+    opacity: 1;
+}
+
+.item-1 {
+    background-image: url("../images/run-buddy.jpg");
+    border-radius: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+.item-2 {
+    background-image: url("../images/horiseon.jpg");
+    border-radius: 10px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.item-3 {
+    background-image: url("../images/500.png");
+    border-radius: 10px;
+}
+
+.item-4 {
+    background-image: url("../images/500.png");
+    border-radius: 10px;
+}
+
+.item-5 {
+    background-image: url("../images/500.png");
+    border-radius: 10px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 100%;
+}
+
+
+        /* ------ Animation ------*/
+
 
 
         
