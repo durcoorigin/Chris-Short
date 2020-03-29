@@ -1,17 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --prime: rgba(210, 180, 140, 0.651);
+}
+
+.section-title h3{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    color: var(--prime);
+    font-weight: 800;
+    font-size: 55px;
+    border-left: 3px solid var(--prime);
+    text-align: center;
+    margin: 0 10%;
+}
+
         /* ------ Navagation Bar ------ */
 
+header {
+    display: flex;
+    background-image: url("../images/wood-pattern.jpg");
+    background-size: cover;
+    color: var(--prime);
+    justify-content: space-around;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+header h1 {
+    font-size: 68px;
+    font-weight: bold;
+    justify-content: flex-start;
+    margin: 7px 0;
+}
+
+header a {
+    text-decoration: none;
+    color:var(--prime);
+}
+
+header nav ul {
+    display: flex;
+    flex: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 10px 15px;
+    margin: 5px 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
 
 
         /* ------ Hero ------ */
 
+#hero {
+    background-image: url("../images/wood-pattern.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+#hero h1 {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    color: var(--prime);
+    font-weight: 800;
+    font-size: 55px;
+    border-left: 3px solid var(--prime);
+    text-align: center;
+    margin: 0 10%;
+}
+
+#hero img {
+    padding: 80px 30px;
+}
+
+#hero h2 {
+    color: var(--prime);
+    font-size: 45px;
+    line-height: 1.3;
+    margin-top: 10%;
+    margin-left: 10%;
+}
 
         /* ------ About Me ------ */
+
+#about-me {
+    display: flex;
+    background-image: url("../images/wood-pattern.jpg");
+    background-size: cover;
+    color: var(--prime);
+    justify-content: space-around;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+        
+
+
+#about-me div {
+    font-size: 20px;
+    display: flex;
+    width: 70%;
+    margin: auto;
+    text-shadow: 0 0 100px rgba(255,255,255,1);
+}
 
 
 
         /* ------ Work ------ */
 
+#work {
+    background-image: url("../images/wood-pattern.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+}
 
         
+
+
+        /* ------ Grid design and layout ------ */
+
+.gallery{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:  repeat(3 1fr);
+    grid-template-rows:  repeat(3 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    grid-auto-columns: minmax(300px, auto);
+}
+
+.gallery-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.gallery h4 {
+    color: white;
+    position: ab;
+    font-size: 28px;
+    margin: 5px;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery a {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-item:hover  {
+    background: rgba(0,0,0,0.5);
+    transition: 0.6s;
+    opacity: 1;
+}
+
+.gallery-item h4:hover {
+    opacity: 1;
+    transition: 0.6s;
+
+}
+
+.item-1 {
+    background-image: url("../images/run-buddy.jpg");
+    border-radius: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+.item-2 {
+    background-image: url("../images/horiseon.jpg");
+    border-radius: 10px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.item-3 {
+    background-image: url("../images/500.png");
+    border-radius: 10px;
+}
+
+.item-4 {
+    background-image: url("../images/500.png");
+    border-radius: 10px;
+}
+
+.item-5 {
+    background-image: url("../images/500.png");
+    border-radius: 10px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 100%;
+}
+
         /* ------ Contact ------ */
+
+#contact {
+    background-image: url("../images/wood-pattern.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    display: flex;
+ 
+}
+        
+                
+#contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+#contact ul li {
+    padding: 10px 15px;
+    margin: 100px 15px 100px;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--prime);
+}
+#contact ul li a {
+    text-decoration: none;
+    color: var(--prime);
+}
+
+        /* ------ Media Queries for small screens ------ */
+
+@media screen and (max-width: 1450px) {
+
+#hero h2 {
+    margin-left: 0;
+    font-size: 20px;
+    
+}
+
+#hero img {
+    Width: 25%; 
+}
+
+#hero h1 {
+    font-size: 20px;
+}
+
+.section-title h3 {
+    font-size: 20px;
+}
+
+
+
+.gallery {
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows:  1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-auto-columns: minmax(200px, auto);
+    margin-top: 30px;
+}
+
+.item-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.item-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#contact ul li {
+    font-size: 20px;
+    margin: 20px;
+}
+
+}
