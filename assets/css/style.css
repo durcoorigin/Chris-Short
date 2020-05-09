@@ -178,7 +178,7 @@ header nav ul li {
 }
 
 .item-1 {
-    background-image: url("../images/run-buddy.jpg");
+    background-image: url("../images/nutrifinder.jpg");
     border-radius: 10px;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -197,7 +197,7 @@ header nav ul li {
 }
 
 .item-3 {
-    background-image: url("../images/500.png");
+    background-image: url("../images/run-buddy.jpg");
     border-radius: 10px;
 }
 
