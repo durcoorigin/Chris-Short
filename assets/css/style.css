@@ -178,7 +178,7 @@ header nav ul li {
 }
 
 .item-1 {
-    background-image: url("../images/nutrifinder.jpg");
+    background-image: url("../images/whiskey-inventory.jpg");
     border-radius: 10px;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -188,7 +188,7 @@ header nav ul li {
 }
 
 .item-2 {
-    background-image: url("../images/horiseon.jpg");
+    background-image: url("../images/nutrifinder.jpg");
     border-radius: 10px;
     grid-column-start: 3;
     grid-column-end: 4;
@@ -202,7 +202,7 @@ header nav ul li {
 }
 
 .item-4 {
-    background-image: url("../images/500.png");
+    background-image: url("../images/horiseon.jpg");
     border-radius: 10px;
 }
 
